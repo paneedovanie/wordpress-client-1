@@ -1,0 +1,90 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#b44693",
+          "name": "Accent",
+          "slug": "accent"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "button": {
+        ":active": {
+          "color": {
+            "background": "var(--wp--preset--color--accent)",
+            "text": "var(--wp--preset--color--white)"
+          }
+        },
+        ":focus": {
+          "color": {
+            "background": "var(--wp--preset--color--accent)",
+            "text": "var(--wp--preset--color--white)"
+          },
+          "outline": {
+            "color": "var(--wp--preset--color--accent)",
+            "offset": "2px",
+            "style": "dotted",
+            "width": "1px"
+          },
+          "border": {
+            "color": "var(--wp--preset--color--accent)"
+          }
+        },
+        ":hover": {
+          "color": {
+            "background": "var(--wp--preset--color--accent)",
+            "text": "var(--wp--preset--color--white)"
+          },
+          "border": {
+            "color": "var(--wp--preset--color--accent)"
+          }
+        },
+        "color": {
+          "background": "var(--wp--preset--color--accent)",
+          "text": "var(--wp--preset--color--white)"
+        },
+        "border": {
+          "color": "var(--wp--preset--color--accent)",
+          "radius": "0.20rem"
+        }
+      },
+      "link": {
+        ":hover": {
+          "typography": {
+            "textDecoration": "none"
+          }
+        },
+        "color": {
+          "text": "var(--wp--preset--color--contrast)"
+        }
+      }
+    },
+    "blocks": {
+      "woocommerce/mini-cart": {
+        "color": {
+          "text": "#b44693"
+        }
+      },
+      "core/search": {
+        "css": "& .wp-block-search__input{border-radius:.2rem 0 0 .2rem;border-color:var(--wp--preset--color--accent)}",
+        "elements": {
+          "button": {
+            "border": {
+              "radius": {
+                "bottomLeft": "0",
+                "topLeft": "0"
+              }
+            },
+            "spacing": { "margin": { "left": "0" } }
+          }
+        }
+      }
+    }
+  }
+}
